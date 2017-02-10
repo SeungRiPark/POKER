@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="600.0" minWidth="600.0" style="-fx-background-color: lightyellow;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vic.poker.MainController">
+   <top>
+      <Pane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="158.0" layoutY="35.0" text="컴퓨터 보유금액" />
+            <Label fx:id="pc_money" layoutX="170.0" layoutY="72.0" text="Label" />
+         </children></Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_play" layoutX="482.0" layoutY="57.0" mnemonicParsing="false" onAction="#onClickBatCard" text="카드 배팅" />
+            <Label layoutX="41.0" layoutY="42.0" text="사용자 보유금액" />
+            <Label layoutX="256.0" layoutY="42.0" text="배팅금액" />
+            <Label fx:id="usr_money" layoutX="41.0" layoutY="69.0" text="Label" />
+            <Label fx:id="bat_money" layoutX="256.0" layoutY="69.0" text="Label" />
+            <Button fx:id="btn_batup" layoutX="382.0" layoutY="26.0" mnemonicParsing="false" onAction="#setOnClickBatUp" text="▲" />
+            <Button fx:id="btn_batdown" layoutX="382.0" layoutY="57.0" mnemonicParsing="false" onAction="#setOnClickBatDown" text="▼" />
+            <Button fx:id="btn_play1" layoutX="482.0" layoutY="26.0" mnemonicParsing="false" onAction="#setOnClickCahngeButton" text="카드 교환" />
+         </children></Pane>
+   </bottom>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <FlowPane alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="img_dic_up_1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_up_2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image></ImageView>
+                  <ImageView fx:id="img_dic_up_3" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_up_4" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_up_5" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_up_6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_up_7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </FlowPane>
+         </top>
+         <bottom>
+            <FlowPane alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="img_dic_down_1" fitHeight="100.0" fitWidth="100.0" onMousePressed="#setOnclickChangeCard" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_down_2" fitHeight="100.0" fitWidth="100.0" onMousePressed="#setOnclickChangeCard" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_down_3" fitHeight="100.0" fitWidth="100.0" onMousePressed="#setOnclickChangeCard" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_down_4" fitHeight="100.0" fitWidth="100.0" onMousePressed="#setOnclickChangeCard" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_down_5" fitHeight="100.0" fitWidth="100.0" onMousePressed="#setOnclickChangeCard" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_down_6" fitHeight="100.0" fitWidth="100.0" onMousePressed="#setOnclickChangeCard" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_dic_down_7" fitHeight="100.0" fitWidth="100.0" onMousePressed="#setOnclickChangeCard" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resource/poker_0.JPG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </FlowPane>
+         </bottom>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: cyan;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="label_whosWin" layoutX="95.0" layoutY="92.0" prefHeight="17.0" prefWidth="406.0" text="Label" />
+                  <Label fx:id="label_pc" layoutX="286.0" layoutY="24.0" text="Label" />
+                  <Label fx:id="label_user" layoutX="286.0" layoutY="157.0" text="Label" />
+               </children></Pane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
